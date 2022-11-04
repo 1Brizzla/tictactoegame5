@@ -17,16 +17,20 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "es2020",
+    "paths": {
+      "components/*": ["./components/*"]
+    },
     "module": "es2020",
     "lib": [
       "es2020",
       "dom"
-    ]
+    ],
+    "strictPropertyInitialization": false
   },
   "angularCompilerOptions": {
-    "enableI18nLegacyMessageIdFormat": false,
+    "enableI18nLegacyMessageIdFormat": true,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
-  }
+    "strictTemplates": true,
+ }
 }
